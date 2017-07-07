@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:padding="16dp"
+    tools:context="br.com.jordan.frasesdodia.MainActivity">
+
+    <Button
+        android:id="@+id/btFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etFrase"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/backgroud_button"
+        android:elevation="12dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/texto_frase_dia"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:clickable="true"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/etFrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:maxLines="3"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textIsSelectable="true"
+        app:minTextSize="16sp" />
+
+    <Button
+        android:id="@+id/btCopiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/backgroud_button"
+        android:elevation="12dp"
+        android:text="@string/btCopiar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignBaseline="@+id/btFrase"
+        android:layout_alignBottom="@+id/btFrase"
+        android:layout_alignRight="@+id/fab_add"
+        android:layout_alignEnd="@+id/fab_add" />
+</RelativeLayout>
