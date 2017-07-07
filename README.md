@@ -1,1 +1,1 @@
-# frases-do-dia
+# Esse projeto é para testar e aprimorar os conhecimentos, basicamente ele utiliza um banco de dados local (SQLite), onde tem as frases para ser utilizadas, tem a opção de cadastrar uma nova frase e copia-la, não está concluido, falta implementar alguns pontos do Material Design
